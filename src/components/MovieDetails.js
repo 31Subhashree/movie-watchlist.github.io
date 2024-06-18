@@ -22,7 +22,7 @@ const MovieDetails = () => {
         <p>Rating: {movie.rating}</p>
         <p>Review: {movie.review}</p>
         <Link to={`/edit/${movie.id}`}>
-          <button>Edit</button>
+          <button className="btn">Edit</button>
         </Link>
       </div>
     </div>
