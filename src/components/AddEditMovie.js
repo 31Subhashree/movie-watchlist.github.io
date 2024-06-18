@@ -61,8 +61,8 @@ const AddEditMovie = () => {
           <input name="genre" value={movieDetails.genre} onChange={handleChange} />
         </div>
         <div className="form-actions">
-          <button type="submit">Save</button>
-          <button type="button" onClick={() => history.push('/')}>Cancel</button>
+          <button type="submit" className="btn">Save</button>
+          <button type="button" className="btn" onClick={() => history.push('/')}>Cancel</button>
         </div>
       </form>
     </div>
