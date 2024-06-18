@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <div className="container">
       <h1>Movie Watchlist</h1>
-      <Link to="/add">
-        <button>Add Movie</button>
+      <Link to="/add" className="btn">
+        Add Movie
       </Link>
       <div className="movie-list">
         {movies.map((movie) => (
