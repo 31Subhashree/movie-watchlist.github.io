@@ -1,0 +1,43 @@
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.movie-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.movie-item h3 {
+  margin: 0 0 10px 0;
+  color: #4a90e2;
+}
+
+.movie-item p {
+  margin: 5px 0;
+}
+
+.movie-item .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.movie-item .content {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
